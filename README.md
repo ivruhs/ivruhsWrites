@@ -92,7 +92,7 @@
    ```
 
 3. **Environment Setup** 🔐
-   Create a `.env` file in the root directory:
+   Create a `.env` file in the server directory:
 
    ```env
    # Database
@@ -116,6 +116,12 @@
    # Application
    PORT=8000
    NODE_ENV=development
+   ```
+
+   Create a `.env` file in the client directory:
+
+   ```env
+   VITE_BASE_URL=your_backend_url
    ```
 
 4. **Run the application** 🏃‍♂️
@@ -153,10 +159,9 @@ ImageKit integration provides:
 Comprehensive admin interface featuring:
 
 - Blog post management
-- Category organization
 - Comment moderation
 - Publishing controls
-- Analytics overview
+- Recent blogs overview
 
 ## 🌐 Deployment
 
@@ -178,8 +183,6 @@ Make sure to set all environment variables in your Vercel dashboard for producti
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👨‍💻 Author
 
